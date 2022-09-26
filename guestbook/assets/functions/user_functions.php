@@ -279,7 +279,7 @@ function sendReservationMail(){
         $mail->Host       = 'smtp.office365.com;';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'bko_website@outlook.com';
-        $mail->Password   = 'NietBiggieDoen_3844';
+        $mail->Password   = 'fuck you you piece of shit';
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
