@@ -276,12 +276,12 @@ function sendReservationMail(){
     try {
         $mail->SMTPDebug = 0;
         $mail->isSMTP();
-        $mail->Host       = 'smtp.office365.com;';
+        $mail->Host       = 'HOST NAME';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'bko_website@outlook.com';
-        $mail->Password   = 'fuck you you piece of shit';
+        $mail->Username   = 'EMAIL';
+        $mail->Password   = 'DONT SHARE';
         $mail->SMTPSecure = 'tls';
-        $mail->Port       = 587;
+        $mail->Port       = PORT NUM;
 
         $to = $_SESSION['user']->email;
         $toName = $_SESSION['user']->name;
@@ -290,7 +290,7 @@ function sendReservationMail(){
         $time = $_POST['time'];
         $timeStamp = date('Y-m-d H:i:s');
 
-        $mail->setFrom('bko_website@outlook.com', 'Restaurant Berke');
+        $mail->setFrom('EMAIL', 'Restaurant Berke');
         $mail->addAddress($to);
         $mail->addAddress($to, $toName);
         $mail->isHTML(true);
